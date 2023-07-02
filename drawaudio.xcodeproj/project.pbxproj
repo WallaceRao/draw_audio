@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD1A5DD62A368692008219F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1A5DD52A368692008219F3 /* AppDelegate.m */; };
+		FD1A5DD82A368696008219F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1A5DD72A368696008219F3 /* Assets.xcassets */; };
+		FD1A5DDB2A368696008219F3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD1A5DD92A368696008219F3 /* MainMenu.xib */; };
+		FD1A5DDD2A368696008219F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1A5DDC2A368696008219F3 /* main.m */; };
+		FD1A5DE82A368696008219F3 /* drawaudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1A5DE72A368696008219F3 /* drawaudioTests.m */; };
+		FD1A5DF22A368696008219F3 /* drawaudioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1A5DF12A368696008219F3 /* drawaudioUITests.m */; };
+		FD1A5DF42A368696008219F3 /* drawaudioUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1A5DF32A368696008219F3 /* drawaudioUITestsLaunchTests.m */; };
+		FD1A5E022A36891D008219F3 /* TrackView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD1A5E012A36891D008219F3 /* TrackView.mm */; };
+		FD1A5E0B2A391EF3008219F3 /* WAV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1A5E092A391EF3008219F3 /* WAV.cpp */; };
+		FD3189622A39279B00E4F865 /* mainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD3189612A39279B00E4F865 /* mainViewController.mm */; };
+		FD3189652A394DAB00E4F865 /* convertedTrackView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD3189642A394DAB00E4F865 /* convertedTrackView.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD1A5DE42A368696008219F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD1A5DC92A368692008219F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1A5DD02A368692008219F3;
+			remoteInfo = drawaudio;
+		};
+		FD1A5DEE2A368696008219F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD1A5DC92A368692008219F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1A5DD02A368692008219F3;
+			remoteInfo = drawaudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD1A5DD12A368692008219F3 /* drawaudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drawaudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1A5DD42A368692008219F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD1A5DD52A368692008219F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD1A5DD72A368696008219F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD1A5DDA2A368696008219F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FD1A5DDC2A368696008219F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD1A5DDE2A368696008219F3 /* drawaudio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = drawaudio.entitlements; sourceTree = "<group>"; };
+		FD1A5DE32A368696008219F3 /* drawaudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drawaudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1A5DE72A368696008219F3 /* drawaudioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = drawaudioTests.m; sourceTree = "<group>"; };
+		FD1A5DED2A368696008219F3 /* drawaudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drawaudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1A5DF12A368696008219F3 /* drawaudioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = drawaudioUITests.m; sourceTree = "<group>"; };
+		FD1A5DF32A368696008219F3 /* drawaudioUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = drawaudioUITestsLaunchTests.m; sourceTree = "<group>"; };
+		FD1A5E002A36891D008219F3 /* TrackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackView.h; sourceTree = "<group>"; };
+		FD1A5E012A36891D008219F3 /* TrackView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TrackView.mm; sourceTree = "<group>"; };
+		FD1A5E032A3916D7008219F3 /* mainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mainViewController.h; sourceTree = "<group>"; };
+		FD1A5E092A391EF3008219F3 /* WAV.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WAV.cpp; sourceTree = "<group>"; };
+		FD3189602A39275200E4F865 /* WAV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAV.h; sourceTree = "<group>"; };
+		FD3189612A39279B00E4F865 /* mainViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mainViewController.mm; sourceTree = "<group>"; };
+		FD3189632A394DAB00E4F865 /* convertedTrackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convertedTrackView.h; sourceTree = "<group>"; };
+		FD3189642A394DAB00E4F865 /* convertedTrackView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = convertedTrackView.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD1A5DCE2A368692008219F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1A5DE02A368696008219F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1A5DEA2A368696008219F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD1A5DC82A368692008219F3 = {
+			isa = PBXGroup;
+			children = (
+				FD1A5DD32A368692008219F3 /* drawaudio */,
+				FD1A5DE62A368696008219F3 /* drawaudioTests */,
+				FD1A5DF02A368696008219F3 /* drawaudioUITests */,
+				FD1A5DD22A368692008219F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD1A5DD22A368692008219F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A5DD12A368692008219F3 /* drawaudio.app */,
+				FD1A5DE32A368696008219F3 /* drawaudioTests.xctest */,
+				FD1A5DED2A368696008219F3 /* drawaudioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD1A5DD32A368692008219F3 /* drawaudio */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A5DD42A368692008219F3 /* AppDelegate.h */,
+				FD1A5DD52A368692008219F3 /* AppDelegate.m */,
+				FD1A5DD72A368696008219F3 /* Assets.xcassets */,
+				FD1A5DD92A368696008219F3 /* MainMenu.xib */,
+				FD1A5E002A36891D008219F3 /* TrackView.h */,
+				FD3189632A394DAB00E4F865 /* convertedTrackView.h */,
+				FD3189642A394DAB00E4F865 /* convertedTrackView.mm */,
+				FD1A5E012A36891D008219F3 /* TrackView.mm */,
+				FD1A5DDC2A368696008219F3 /* main.m */,
+				FD1A5DDE2A368696008219F3 /* drawaudio.entitlements */,
+				FD1A5E032A3916D7008219F3 /* mainViewController.h */,
+				FD3189612A39279B00E4F865 /* mainViewController.mm */,
+				FD3189602A39275200E4F865 /* WAV.h */,
+				FD1A5E092A391EF3008219F3 /* WAV.cpp */,
+			);
+			path = drawaudio;
+			sourceTree = "<group>";
+		};
+		FD1A5DE62A368696008219F3 /* drawaudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A5DE72A368696008219F3 /* drawaudioTests.m */,
+			);
+			path = drawaudioTests;
+			sourceTree = "<group>";
+		};
+		FD1A5DF02A368696008219F3 /* drawaudioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A5DF12A368696008219F3 /* drawaudioUITests.m */,
+				FD1A5DF32A368696008219F3 /* drawaudioUITestsLaunchTests.m */,
+			);
+			path = drawaudioUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD1A5DD02A368692008219F3 /* drawaudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1A5DF72A368696008219F3 /* Build configuration list for PBXNativeTarget "drawaudio" */;
+			buildPhases = (
+				FD1A5DCD2A368692008219F3 /* Sources */,
+				FD1A5DCE2A368692008219F3 /* Frameworks */,
+				FD1A5DCF2A368692008219F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = drawaudio;
+			productName = drawaudio;
+			productReference = FD1A5DD12A368692008219F3 /* drawaudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD1A5DE22A368696008219F3 /* drawaudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1A5DFA2A368696008219F3 /* Build configuration list for PBXNativeTarget "drawaudioTests" */;
+			buildPhases = (
+				FD1A5DDF2A368696008219F3 /* Sources */,
+				FD1A5DE02A368696008219F3 /* Frameworks */,
+				FD1A5DE12A368696008219F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD1A5DE52A368696008219F3 /* PBXTargetDependency */,
+			);
+			name = drawaudioTests;
+			productName = drawaudioTests;
+			productReference = FD1A5DE32A368696008219F3 /* drawaudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD1A5DEC2A368696008219F3 /* drawaudioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1A5DFD2A368696008219F3 /* Build configuration list for PBXNativeTarget "drawaudioUITests" */;
+			buildPhases = (
+				FD1A5DE92A368696008219F3 /* Sources */,
+				FD1A5DEA2A368696008219F3 /* Frameworks */,
+				FD1A5DEB2A368696008219F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD1A5DEF2A368696008219F3 /* PBXTargetDependency */,
+			);
+			name = drawaudioUITests;
+			productName = drawaudioUITests;
+			productReference = FD1A5DED2A368696008219F3 /* drawaudioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD1A5DC92A368692008219F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FD1A5DD02A368692008219F3 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FD1A5DE22A368696008219F3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FD1A5DD02A368692008219F3;
+					};
+					FD1A5DEC2A368696008219F3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FD1A5DD02A368692008219F3;
+					};
+				};
+			};
+			buildConfigurationList = FD1A5DCC2A368692008219F3 /* Build configuration list for PBXProject "drawaudio" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD1A5DC82A368692008219F3;
+			productRefGroup = FD1A5DD22A368692008219F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD1A5DD02A368692008219F3 /* drawaudio */,
+				FD1A5DE22A368696008219F3 /* drawaudioTests */,
+				FD1A5DEC2A368696008219F3 /* drawaudioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD1A5DCF2A368692008219F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1A5DD82A368696008219F3 /* Assets.xcassets in Resources */,
+				FD1A5DDB2A368696008219F3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1A5DE12A368696008219F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1A5DEB2A368696008219F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD1A5DCD2A368692008219F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1A5DDD2A368696008219F3 /* main.m in Sources */,
+				FD1A5E0B2A391EF3008219F3 /* WAV.cpp in Sources */,
+				FD1A5DD62A368692008219F3 /* AppDelegate.m in Sources */,
+				FD1A5E022A36891D008219F3 /* TrackView.mm in Sources */,
+				FD3189622A39279B00E4F865 /* mainViewController.mm in Sources */,
+				FD3189652A394DAB00E4F865 /* convertedTrackView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1A5DDF2A368696008219F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1A5DE82A368696008219F3 /* drawaudioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1A5DE92A368696008219F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1A5DF22A368696008219F3 /* drawaudioUITests.m in Sources */,
+				FD1A5DF42A368696008219F3 /* drawaudioUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD1A5DE52A368696008219F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1A5DD02A368692008219F3 /* drawaudio */;
+			targetProxy = FD1A5DE42A368696008219F3 /* PBXContainerItemProxy */;
+		};
+		FD1A5DEF2A368696008219F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1A5DD02A368692008219F3 /* drawaudio */;
+			targetProxy = FD1A5DEE2A368696008219F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD1A5DD92A368696008219F3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD1A5DDA2A368696008219F3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD1A5DF52A368696008219F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FD1A5DF62A368696008219F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FD1A5DF82A368696008219F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = drawaudio/drawaudio.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yonghui.drawaudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		FD1A5DF92A368696008219F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = drawaudio/drawaudio.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yonghui.drawaudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		FD1A5DFB2A368696008219F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yonghui.drawaudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/drawaudio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/drawaudio";
+			};
+			name = Debug;
+		};
+		FD1A5DFC2A368696008219F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yonghui.drawaudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/drawaudio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/drawaudio";
+			};
+			name = Release;
+		};
+		FD1A5DFE2A368696008219F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yonghui.drawaudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = drawaudio;
+			};
+			name = Debug;
+		};
+		FD1A5DFF2A368696008219F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yonghui.drawaudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = drawaudio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD1A5DCC2A368692008219F3 /* Build configuration list for PBXProject "drawaudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1A5DF52A368696008219F3 /* Debug */,
+				FD1A5DF62A368696008219F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1A5DF72A368696008219F3 /* Build configuration list for PBXNativeTarget "drawaudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1A5DF82A368696008219F3 /* Debug */,
+				FD1A5DF92A368696008219F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1A5DFA2A368696008219F3 /* Build configuration list for PBXNativeTarget "drawaudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1A5DFB2A368696008219F3 /* Debug */,
+				FD1A5DFC2A368696008219F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1A5DFD2A368696008219F3 /* Build configuration list for PBXNativeTarget "drawaudioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1A5DFE2A368696008219F3 /* Debug */,
+				FD1A5DFF2A368696008219F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD1A5DC92A368692008219F3 /* Project object */;
+}
