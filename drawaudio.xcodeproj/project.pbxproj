@@ -18,6 +18,7 @@
 		FD1A5E0B2A391EF3008219F3 /* WAV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1A5E092A391EF3008219F3 /* WAV.cpp */; };
 		FD3189622A39279B00E4F865 /* mainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD3189612A39279B00E4F865 /* mainViewController.mm */; };
 		FD3189652A394DAB00E4F865 /* convertedTrackView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD3189642A394DAB00E4F865 /* convertedTrackView.mm */; };
+		FDAC61562A523EEB00F741A0 /* f0View.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDAC61552A523EEB00F741A0 /* f0View.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		FD3189612A39279B00E4F865 /* mainViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mainViewController.mm; sourceTree = "<group>"; };
 		FD3189632A394DAB00E4F865 /* convertedTrackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convertedTrackView.h; sourceTree = "<group>"; };
 		FD3189642A394DAB00E4F865 /* convertedTrackView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = convertedTrackView.mm; sourceTree = "<group>"; };
+		FDAC61542A523EEB00F741A0 /* f0View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = f0View.h; sourceTree = "<group>"; };
+		FDAC61552A523EEB00F741A0 /* f0View.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = f0View.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				FD3189612A39279B00E4F865 /* mainViewController.mm */,
 				FD3189602A39275200E4F865 /* WAV.h */,
 				FD1A5E092A391EF3008219F3 /* WAV.cpp */,
+				FDAC61542A523EEB00F741A0 /* f0View.h */,
+				FDAC61552A523EEB00F741A0 /* f0View.mm */,
 			);
 			path = drawaudio;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 				FD1A5DDD2A368696008219F3 /* main.m in Sources */,
 				FD1A5E0B2A391EF3008219F3 /* WAV.cpp in Sources */,
 				FD1A5DD62A368692008219F3 /* AppDelegate.m in Sources */,
+				FDAC61562A523EEB00F741A0 /* f0View.mm in Sources */,
 				FD1A5E022A36891D008219F3 /* TrackView.mm in Sources */,
 				FD3189622A39279B00E4F865 /* mainViewController.mm in Sources */,
 				FD3189652A394DAB00E4F865 /* convertedTrackView.mm in Sources */,

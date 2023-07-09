@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSData *)readFileFromFilePath:(NSURL *)filePath;
 
 -(IBAction) OnImportFileClicked:(id) sender;
+-(IBAction) OnZoomInlicked:(id) sender;
+-(IBAction) OnZoomOutlicked:(id) sender;
 
 @property IBOutlet TrackView *origin_view;
 

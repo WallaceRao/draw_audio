@@ -76,4 +76,13 @@ static NSURL * cur_file_path;
     }
 }
 
+
+-(IBAction) OnZoomInlicked:(id) sender {
+    [[self origin_view] zoomIn];
+    
+}
+-(IBAction) OnZoomOutlicked:(id) sender {
+    [[self origin_view] zoomOut];
+}
+
 @end
