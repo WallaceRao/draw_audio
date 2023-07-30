@@ -427,3 +427,75 @@ void WAV::dumpHeader(){
 }
 
 
+
+void pcm2wav(const int16_t* x, int x_length, int fs, int nbit,
+             std::vector<char>* out_vec) {
+    int out_buffer_len = 44 + sizeof(int16_t) * x_length;
+    out_vec->resize(out_buffer_len);
+    char* out_buffer = &((*out_vec)[0]);
+    char text[4] = {'R', 'I', 'F', 'F'};
+    uint32_t long_number = 36 + x_length * 2;
+    char* out_point = out_buffer;
+    memcpy(out_point, text, 4);
+    out_point += 4;
+    memcpy(out_point, &long_number, 4);
+    out_point += 4;
+    
+    text[0] = 'W';
+    text[1] = 'A';
+    text[2] = 'V';
+    text[3] = 'E';
+    memcpy(out_point, text, 4);
+    out_point += 4;
+    text[0] = 'f';
+    text[1] = 'm';
+    text[2] = 't';
+    text[3] = ' ';
+    memcpy(out_point, text, 4);
+    out_point += 4;
+    
+    long_number = 16;
+    memcpy(out_point, &long_number, 4);
+    out_point += 4;
+    
+    int16_t short_number = 1;
+    memcpy(out_point, &short_number, 2);
+    out_point += 2;
+    short_number = 1;
+    memcpy(out_point, &short_number, 2);
+    out_point += 2;
+    long_number = fs;
+    memcpy(out_point, &long_number, 4);
+    out_point += 4;
+    
+    long_number = fs * 2;
+    memcpy(out_point, &long_number, 4);
+    out_point += 4;
+    
+    short_number = 2;
+    memcpy(out_point, &short_number, 2);
+    out_point += 2;
+    
+    short_number = 16;
+    memcpy(out_point, &short_number, 2);
+    out_point += 2;
+    
+    text[0] = 'd';
+    text[1] = 'a';
+    text[2] = 't';
+    text[3] = 'a';
+    memcpy(out_point, text, 4);
+    out_point += 4;
+    
+    long_number = x_length * 2;
+    memcpy(out_point, &long_number, 4);
+    out_point += 4;
+    
+    int16_t tmp_signal;
+    for (int i = 0; i < x_length; ++i) {
+        tmp_signal = x[i];
+        memcpy(out_point, &tmp_signal, 2);
+        out_point += 2;
+    }
+}
+

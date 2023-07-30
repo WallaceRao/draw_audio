@@ -27,6 +27,7 @@
 		FDAC7FEA2A72AD6800F741A0 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDAC7FE92A72AD6800F741A0 /* libopus.a */; };
 		FDAC7FF02A72B08C00F741A0 /* resample_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDAC7FEF2A72B08C00F741A0 /* resample_util.cpp */; };
 		FDAC7FF32A76524200F741A0 /* opus_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDAC7FF22A76524100F741A0 /* opus_util.cpp */; };
+		FDAC7FF62A76B6F900F741A0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDAC7FF52A76B6F800F741A0 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		FDAC7FEF2A72B08C00F741A0 /* resample_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resample_util.cpp; sourceTree = "<group>"; };
 		FDAC7FF12A76524100F741A0 /* opus_util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = opus_util.h; sourceTree = "<group>"; };
 		FDAC7FF22A76524100F741A0 /* opus_util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = opus_util.cpp; sourceTree = "<group>"; };
+		FDAC7FF52A76B6F800F741A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDAC7FF62A76B6F900F741A0 /* AVFoundation.framework in Frameworks */,
 				FDAC7FEA2A72AD6800F741A0 /* libopus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,6 +127,7 @@
 				FD1A5DE62A368696008219F3 /* drawaudioTests */,
 				FD1A5DF02A368696008219F3 /* drawaudioUITests */,
 				FD1A5DD22A368692008219F3 /* Products */,
+				FDAC7FF42A76B6F800F741A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,6 +239,14 @@
 				FDAC7FE72A72AD3C00F741A0 /* opus_projection.h */,
 			);
 			path = include;
+			sourceTree = "<group>";
+		};
+		FDAC7FF42A76B6F800F741A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC7FF52A76B6F800F741A0 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

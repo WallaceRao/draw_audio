@@ -26,6 +26,7 @@ float mouse_drag_end = 0;
 float mouse_drag_cur = 0;
 
 float play_start_pos = 0;
+int play_start_index  = 0;
 bool show_play_start_pos = FALSE;
 bool refresh_points = TRUE;
 
@@ -33,6 +34,17 @@ bool audio_loaded = FALSE;
 
 std::vector<int16_t> samples;
 
+-(int) getPlayStartIndex {
+    if (play_start_pos <= 0) {
+        return 0;
+    }
+    float width =  [self bounds].size.width;
+    float ratio  = play_start_pos * 1.0 / width;
+    if (ratio >= 1) {
+        return samples.size() -1;
+    }
+    return ratio * samples.size();
+}
 
 -(float)getTsStart {
     return start_ts;
@@ -313,5 +325,30 @@ std::vector<int16_t> samples;
     return true;
 }
 
+-(IBAction) OnPlayClicked:(id) sender {
+    static bool in_play = false;
+    void pcm2wav(const int16_t* x, int x_length, int fs, int nbit, std::vector<char>* out_vec);
+    if (samples.size() <= 0) {
+        return;
+    }
+    if (!in_play) {
+        std::vector<char> out_vec;
+        int start_index = [self getPlayStartIndex];
+        int play_samples_size = samples.size() - start_index;
+        pcm2wav(&samples[start_index], play_samples_size, 24000, 16, &out_vec);
+        NSData *wav_data =  [NSData dataWithBytes:&out_vec[0] length:out_vec.size()];
+        _theAudio = [[AVAudioPlayer alloc] initWithData:wav_data fileTypeHint:AVFileTypeWAVE error:NULL];
+        [_theAudio play];
+        [_play_button setTitle:@"Stop"];
+        in_play = true;
+        [_play_button setNeedsDisplay:YES];
+
+    } else {
+        [_theAudio stop];
+        [_play_button setTitle:@"Play"];
+        in_play = false;
+        [_play_button setNeedsDisplay:YES];
+    }
+}
 
 @end

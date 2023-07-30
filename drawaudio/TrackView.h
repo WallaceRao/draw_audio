@@ -8,6 +8,9 @@
 #import <Cocoa/Cocoa.h>
 #import "WAV.h"
 #import "f0View.h"
+#import <AVFoundation/AVFoundation.h>
+
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,6 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property IBOutlet f0View  *f0_view;
 
+@property (nonatomic,strong) AVAudioPlayer * theAudio;
+
+@property IBOutlet NSButton  *play_button;
+
+-(IBAction) OnPlayClicked:(id) sender;
 -(bool)init:(NSURL *)url;
 
 -(bool)zoomIn;

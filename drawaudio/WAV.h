@@ -107,5 +107,6 @@ public:
 };
 
 
+void pcm2wav(const int16_t* x, int x_length, int fs, int nbit, std::vector<char>* out_vec);
 
 #endif
