@@ -7,6 +7,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "TrackView.h"
+#import "f0View.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface mainViewController : NSViewController
@@ -19,7 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 -(IBAction) OnZoomInlicked:(id) sender;
 -(IBAction) OnZoomOutlicked:(id) sender;
 
+-(IBAction) OnExtractF0:(id) sender;
+
 @property IBOutlet TrackView *origin_view;
+@property IBOutlet f0View *f0_view;
 
 @end
 

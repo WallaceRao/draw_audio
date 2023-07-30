@@ -2,6 +2,8 @@
 
 #include <sstream>
 
+
+
 WAV::WAV(const WAV& other){
     //init();
     this->createHeader(other.getChannels(), other.getSampleRate(), other.getBit());
@@ -423,3 +425,5 @@ void WAV::dumpHeader(){
     std::cout << "dataSize\t" << _dataSize << std::endl;
     
 }
+
+

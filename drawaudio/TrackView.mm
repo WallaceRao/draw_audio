@@ -6,8 +6,11 @@
 //
 
 #import "TrackView.h"
+#import "libresample/resample_util.h"
+#import "opus_util.h"
 
 @implementation TrackView
+
 
 WAV origin_wav;
 
@@ -28,6 +31,22 @@ bool refresh_points = TRUE;
 
 bool audio_loaded = FALSE;
 
+std::vector<int16_t> samples;
+
+
+-(float)getTsStart {
+    return start_ts;
+}
+
+-(float)getTsEnd {
+    return end_ts;
+}
+
+-(float)getTotalDuration {
+    return total_duration;
+}
+
+
 - (void)drawRect:(NSRect)dirtyRect {
     // set any NSColor for filling, say white:
 
@@ -45,7 +64,7 @@ bool audio_loaded = FALSE;
     }
     
     [[NSColor yellowColor] set];
-    size_t sample_count = origin_wav.getSampleCount();
+    size_t sample_count = samples.size();
     size_t start_sample_index = start_ts / total_duration * sample_count;
     size_t end_sample_index = end_ts / total_duration * sample_count;
     size_t show_sample_count = end_sample_index - start_sample_index;
@@ -58,7 +77,7 @@ bool audio_loaded = FALSE;
             break;
         }
         NSRect drawingRect = NSZeroRect;
-        int16_t sample = *((int16_t *)origin_wav.getData() + i);
+        int16_t sample = samples[i];
         drawingRect.origin.x = [self bounds].origin.x +  [self bounds].size.width *  ((i - start_sample_index)/(show_sample_count - 1.0));
         drawingRect.origin.y = [self bounds].origin.y +  [self bounds].size.height / 2 +  [self bounds].size.height / 2 * ((sample)/(32768 - 1.0)) ;
         drawingRect.size.width = 1; //[self bounds].size.width/sample_count;
@@ -140,6 +159,23 @@ bool audio_loaded = FALSE;
     start_ts = 0;
     end_ts = total_duration;
     audio_loaded = true;
+    std::vector<int16_t> tmp_samples;
+    for (size_t i = 0; i < origin_wav.getSampleCount(); i = i + 1) {
+        int16_t sample = *((int16_t *)origin_wav.getData() + i);
+        tmp_samples.push_back(sample);
+    }
+    ResampleUtil util;
+    int target_sr = 24000;
+    if (origin_wav.getSampleRate() != target_sr) {
+        NSLog(@"resample from %d to %d", origin_wav.getSampleRate() ,target_sr);
+        util.Init(origin_wav.getSampleRate(), target_sr);
+        util.Resample(tmp_samples, samples, true);
+        NSLog(@"resample finished %d to %d, sample size from %d to %d", origin_wav.getSampleRate() ,target_sr, tmp_samples.size(),samples.size());
+    } else {
+        tmp_samples.swap(samples);
+    }
+    std::vector<char> opus_data;
+    Wav2Opus(samples, opus_data);
     return true;
 }
 
@@ -267,13 +303,13 @@ bool audio_loaded = FALSE;
         NSLog(@"start not valid %f",start);
         return false;
     }
-    if (end - start < 0.3) {
+    if (end - start < 0.1) {
         NSLog(@"selected duration is too small: %f",end - start);
         return false;
     }
     start_ts = start;
     end_ts = end;
-    
+    [[self f0_view] select_dur:start  end:end];
     return true;
 }
 

@@ -85,4 +85,20 @@ static NSURL * cur_file_path;
     [[self origin_view] zoomOut];
 }
 
+
+-(IBAction) OnExtractF0:(id) sender {
+    float total_dur =  [[self origin_view] getTotalDuration];
+    std::vector<float> f0_samples;
+    for (int i = 0; i < 510; i ++) {
+        f0_samples.push_back(i * 0.1 + 100);
+    }
+    
+    if (total_dur > 0) {
+        [[self f0_view] init:f0_samples total_dur:total_dur];
+    }
+    float start_ts = [[self origin_view] getTsStart];
+    float end_ts = [[self origin_view] getTsEnd];
+    [[self f0_view] select_dur:start_ts end:end_ts];
+}
+
 @end

@@ -7,16 +7,25 @@
 
 #import <Cocoa/Cocoa.h>
 #import "WAV.h"
+#import "f0View.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TrackView : NSView
 
 @property (nonatomic,unsafe_unretained) WAV _wav;
+
+@property IBOutlet f0View  *f0_view;
+
 -(bool)init:(NSURL *)url;
 
 -(bool)zoomIn;
 -(bool)zoomOut;
+
+-(float)getTsStart;
+-(float)getTsEnd;
+-(float)getTotalDuration;
+
 
 @property IBOutlet NSTextField *l1;
 @property IBOutlet NSTextField *l2;

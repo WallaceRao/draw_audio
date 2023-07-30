@@ -19,6 +19,14 @@
 		FD3189622A39279B00E4F865 /* mainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD3189612A39279B00E4F865 /* mainViewController.mm */; };
 		FD3189652A394DAB00E4F865 /* convertedTrackView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD3189642A394DAB00E4F865 /* convertedTrackView.mm */; };
 		FDAC61562A523EEB00F741A0 /* f0View.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDAC61552A523EEB00F741A0 /* f0View.mm */; };
+		FDAC7D2B2A66130600F741A0 /* piano.png in Resources */ = {isa = PBXBuildFile; fileRef = FDAC7D2A2A66130600F741A0 /* piano.png */; };
+		FDAC7D402A70A32400F741A0 /* resamplesubs.c in Sources */ = {isa = PBXBuildFile; fileRef = FDAC7D3A2A70A32400F741A0 /* resamplesubs.c */; };
+		FDAC7D412A70A32400F741A0 /* resample.c in Sources */ = {isa = PBXBuildFile; fileRef = FDAC7D3C2A70A32400F741A0 /* resample.c */; };
+		FDAC7D422A70A32400F741A0 /* filterkit.c in Sources */ = {isa = PBXBuildFile; fileRef = FDAC7D3F2A70A32400F741A0 /* filterkit.c */; };
+		FDAC7FE82A72AD3C00F741A0 /* meson.build in Resources */ = {isa = PBXBuildFile; fileRef = FDAC7FE32A72AD3C00F741A0 /* meson.build */; };
+		FDAC7FEA2A72AD6800F741A0 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDAC7FE92A72AD6800F741A0 /* libopus.a */; };
+		FDAC7FF02A72B08C00F741A0 /* resample_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDAC7FEF2A72B08C00F741A0 /* resample_util.cpp */; };
+		FDAC7FF32A76524200F741A0 /* opus_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDAC7FF22A76524100F741A0 /* opus_util.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +69,26 @@
 		FD3189642A394DAB00E4F865 /* convertedTrackView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = convertedTrackView.mm; sourceTree = "<group>"; };
 		FDAC61542A523EEB00F741A0 /* f0View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = f0View.h; sourceTree = "<group>"; };
 		FDAC61552A523EEB00F741A0 /* f0View.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = f0View.mm; sourceTree = "<group>"; };
+		FDAC7D2A2A66130600F741A0 /* piano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano.png; sourceTree = "<group>"; };
+		FDAC7D382A70A32400F741A0 /* libresample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libresample.h; sourceTree = "<group>"; };
+		FDAC7D3A2A70A32400F741A0 /* resamplesubs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = resamplesubs.c; sourceTree = "<group>"; };
+		FDAC7D3B2A70A32400F741A0 /* filterkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filterkit.h; sourceTree = "<group>"; };
+		FDAC7D3C2A70A32400F741A0 /* resample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = resample.c; sourceTree = "<group>"; };
+		FDAC7D3D2A70A32400F741A0 /* resample_defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resample_defs.h; sourceTree = "<group>"; };
+		FDAC7D3E2A70A32400F741A0 /* configtemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = configtemplate.h; sourceTree = "<group>"; };
+		FDAC7D3F2A70A32400F741A0 /* filterkit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filterkit.c; sourceTree = "<group>"; };
+		FDAC7FE12A72AD3C00F741A0 /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
+		FDAC7FE22A72AD3C00F741A0 /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
+		FDAC7FE32A72AD3C00F741A0 /* meson.build */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = meson.build; sourceTree = "<group>"; };
+		FDAC7FE42A72AD3C00F741A0 /* opus_custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_custom.h; sourceTree = "<group>"; };
+		FDAC7FE52A72AD3C00F741A0 /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
+		FDAC7FE62A72AD3C00F741A0 /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
+		FDAC7FE72A72AD3C00F741A0 /* opus_projection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_projection.h; sourceTree = "<group>"; };
+		FDAC7FE92A72AD6800F741A0 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
+		FDAC7FEE2A72B08C00F741A0 /* resample_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resample_util.h; sourceTree = "<group>"; };
+		FDAC7FEF2A72B08C00F741A0 /* resample_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resample_util.cpp; sourceTree = "<group>"; };
+		FDAC7FF12A76524100F741A0 /* opus_util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = opus_util.h; sourceTree = "<group>"; };
+		FDAC7FF22A76524100F741A0 /* opus_util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = opus_util.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDAC7FEA2A72AD6800F741A0 /* libopus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,14 +140,16 @@
 		FD1A5DD32A368692008219F3 /* drawaudio */ = {
 			isa = PBXGroup;
 			children = (
+				FDAC7FDF2A72ACAB00F741A0 /* opus */,
+				FDAC7D2C2A70A16F00F741A0 /* libresample */,
 				FD1A5DD42A368692008219F3 /* AppDelegate.h */,
 				FD1A5DD52A368692008219F3 /* AppDelegate.m */,
 				FD1A5DD72A368696008219F3 /* Assets.xcassets */,
 				FD1A5DD92A368696008219F3 /* MainMenu.xib */,
 				FD1A5E002A36891D008219F3 /* TrackView.h */,
+				FD1A5E012A36891D008219F3 /* TrackView.mm */,
 				FD3189632A394DAB00E4F865 /* convertedTrackView.h */,
 				FD3189642A394DAB00E4F865 /* convertedTrackView.mm */,
-				FD1A5E012A36891D008219F3 /* TrackView.mm */,
 				FD1A5DDC2A368696008219F3 /* main.m */,
 				FD1A5DDE2A368696008219F3 /* drawaudio.entitlements */,
 				FD1A5E032A3916D7008219F3 /* mainViewController.h */,
@@ -127,6 +158,7 @@
 				FD1A5E092A391EF3008219F3 /* WAV.cpp */,
 				FDAC61542A523EEB00F741A0 /* f0View.h */,
 				FDAC61552A523EEB00F741A0 /* f0View.mm */,
+				FDAC7D2A2A66130600F741A0 /* piano.png */,
 			);
 			path = drawaudio;
 			sourceTree = "<group>";
@@ -146,6 +178,63 @@
 				FD1A5DF32A368696008219F3 /* drawaudioUITestsLaunchTests.m */,
 			);
 			path = drawaudioUITests;
+			sourceTree = "<group>";
+		};
+		FDAC7D2C2A70A16F00F741A0 /* libresample */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC7FEF2A72B08C00F741A0 /* resample_util.cpp */,
+				FDAC7FEE2A72B08C00F741A0 /* resample_util.h */,
+				FDAC7D372A70A32400F741A0 /* include */,
+				FDAC7D392A70A32400F741A0 /* src */,
+			);
+			path = libresample;
+			sourceTree = "<group>";
+		};
+		FDAC7D372A70A32400F741A0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC7D382A70A32400F741A0 /* libresample.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FDAC7D392A70A32400F741A0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC7D3A2A70A32400F741A0 /* resamplesubs.c */,
+				FDAC7D3B2A70A32400F741A0 /* filterkit.h */,
+				FDAC7D3C2A70A32400F741A0 /* resample.c */,
+				FDAC7D3D2A70A32400F741A0 /* resample_defs.h */,
+				FDAC7D3E2A70A32400F741A0 /* configtemplate.h */,
+				FDAC7D3F2A70A32400F741A0 /* filterkit.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		FDAC7FDF2A72ACAB00F741A0 /* opus */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC7FE92A72AD6800F741A0 /* libopus.a */,
+				FDAC7FE02A72AD3C00F741A0 /* include */,
+				FDAC7FF12A76524100F741A0 /* opus_util.h */,
+				FDAC7FF22A76524100F741A0 /* opus_util.cpp */,
+			);
+			path = opus;
+			sourceTree = "<group>";
+		};
+		FDAC7FE02A72AD3C00F741A0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FDAC7FE12A72AD3C00F741A0 /* opus.h */,
+				FDAC7FE22A72AD3C00F741A0 /* opus_multistream.h */,
+				FDAC7FE32A72AD3C00F741A0 /* meson.build */,
+				FDAC7FE42A72AD3C00F741A0 /* opus_custom.h */,
+				FDAC7FE52A72AD3C00F741A0 /* opus_types.h */,
+				FDAC7FE62A72AD3C00F741A0 /* opus_defines.h */,
+				FDAC7FE72A72AD3C00F741A0 /* opus_projection.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +342,8 @@
 			files = (
 				FD1A5DD82A368696008219F3 /* Assets.xcassets in Resources */,
 				FD1A5DDB2A368696008219F3 /* MainMenu.xib in Resources */,
+				FDAC7D2B2A66130600F741A0 /* piano.png in Resources */,
+				FDAC7FE82A72AD3C00F741A0 /* meson.build in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,13 +368,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDAC7D422A70A32400F741A0 /* filterkit.c in Sources */,
 				FD1A5DDD2A368696008219F3 /* main.m in Sources */,
 				FD1A5E0B2A391EF3008219F3 /* WAV.cpp in Sources */,
 				FD1A5DD62A368692008219F3 /* AppDelegate.m in Sources */,
 				FDAC61562A523EEB00F741A0 /* f0View.mm in Sources */,
 				FD1A5E022A36891D008219F3 /* TrackView.mm in Sources */,
+				FDAC7D412A70A32400F741A0 /* resample.c in Sources */,
+				FDAC7D402A70A32400F741A0 /* resamplesubs.c in Sources */,
+				FDAC7FF32A76524200F741A0 /* opus_util.cpp in Sources */,
 				FD3189622A39279B00E4F865 /* mainViewController.mm in Sources */,
 				FD3189652A394DAB00E4F865 /* convertedTrackView.mm in Sources */,
+				FDAC7FF02A72B08C00F741A0 /* resample_util.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +555,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/drawaudio/opus",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Yonghui.drawaudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,6 +582,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/drawaudio/opus",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Yonghui.drawaudio;
